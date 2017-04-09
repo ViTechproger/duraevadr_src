@@ -1,0 +1,235 @@
+@font-face {
+  font-family:Coca Cola;
+  src: url(/assets/coca-cola.otf) format("opentype");
+}
+
+@media screen (max-width:1270px) {
+	.header__info__name{
+		font-size: 2em;
+	}
+}
+
+.center{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.body_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.header_wrapper{
+	display: flex;
+	flex-wrap:wrap;
+	padding: 20px;
+	background-color: #CF1919;
+	min-height: 100vh;
+}
+
+.header__avatar_wrapper{
+	display: flex;
+	height:100%;
+	align-items:center;
+	justify-content:center;
+	margin-top: 50px;
+}
+
+.header__avatar{
+	width:500px;
+	height:500px;
+	border-radius: 100%;
+	background:url('/assets/avatar.jpg') no-repeat center center;
+	background-size:cover;
+}
+
+.header__info_wrapper{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.header__info__name{
+	padding:100px 0;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	font-size: 4em;
+	font-family: Coca Cola;
+}
+
+.header__info__title{
+	font-size: 2em;
+	margin-bottom: 40px;
+	font-family: Coca Cola;
+}
+
+.header__info__services{
+	width:200px;
+	height:50px;
+	border-radius: 20px;
+	background-color: black;
+	color:white;
+	font-weight: bold;
+	cursor:pointer;
+	margin-top: 50px;
+}
+
+.header__info__services:hover{
+	background-color: gray;
+}
+
+.services_wrapper{
+	padding:20px;
+	display: flex;
+	flex-direction:column;
+	background-color: #f7dcdc;
+}
+
+.services__content{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.services__title{
+	text-align: center;
+	padding: 20px;
+	font-size:3em;
+	font-family: Coca Cola;
+}
+
+.services__item{
+	display: flex;
+	flex-direction:column;
+	margin:20px;
+	align-items:center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.services__item:hover{
+	transition:all 0.1s ease-out;
+	box-shadow: 0 0 10px rgba(207,25,25,0.5);
+}
+
+.services__item__image{
+	width: 200px;
+	height: 200px;
+	min-width: 200px;
+	min-height: 200px;
+	margin-bottom: 10px;
+}
+
+.services__item__image.male-haircut{
+	background: url('/assets/male-haircut.jpg') no-repeat center center;
+	background-size: contain;
+}
+
+.services__item__image.female-haircut{
+	background: url('/assets/female-haircut.jpg') no-repeat center center;
+	background-size: contain;
+}
+
+.services__item__image.ceratin,
+.ceratin__image{
+	background: url('/assets/ceratin.jpg') no-repeat center center;
+	background-size: contain;
+}
+
+.services__item__image.biolaminating{
+	background: url('/assets/biolaminating.jpg') no-repeat center center;
+	background-size: contain;
+}
+
+.video_wrapper{
+	display: flex;
+	justify-content:space-around;
+	padding: 30px;
+	background-color: #CF1919;
+}
+
+.video_container{
+	width:500px;
+	height: 300px;
+	// border: 2px solid pink;
+}
+
+.video_info{
+	width:40%;
+}
+
+.footer_wrapper{
+	display: flex;
+	width:100%;
+	height:200px;
+	align-items:center;
+	justify-content:center;
+	background-color: #604e4e;
+	color:white;
+}
+
+.footer_wrapper .item{
+	margin:0 30px;
+	color:white;
+	font-size: 3em;
+}
+
+.modal{
+	display: none;
+	position: absolute;
+	top:30%;
+	height: 40px;
+}
+
+
+.content{
+	display: flex;
+	justify-content:space-around;
+	padding: 20px;
+}
+
+.content__image{
+	width: 400px;
+	min-width: 400px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.ceratin__image{
+	min-height: 200px;
+}
+
+.ceratin__wrapper{
+	display: flex;
+}
+
+.ceratin__content{
+	// width:50%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.ceratin__price__title{
+	padding-bottom:20px;
+}
+
+.ceratin__price{
+	font-weight: bold;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	margin-right: 40px;
+	justify-content:center;
+}
+
+@media all (max-width:960px) {
+	.header__avatar_wrapper{
+		font-size: 2em;
+	}
+	.services__item,
+	.services__item__image{
+		width:100%;
+		height: auto;
+	}
+}

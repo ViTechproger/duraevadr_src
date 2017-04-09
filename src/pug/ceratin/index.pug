@@ -1,0 +1,23 @@
+extends ../_layout
+block content
+	.content.content--ceratin
+		.ceratin__image.content__image
+		.ceratin__wrapper
+			.ceratin__price.small-12.large-4
+				.ceratin__price__title|Цены
+				.ceratin__price__content|каре - от 800 р.
+					br
+					|до плеч - от 1200 р.
+					br
+					|до лопаток - от 1800 р.
+					br
+					|до поясницы - от 2500 р.
+			.ceratin__content.small-12.large-6
+				.ceratin__content__text|Кератиновое лечение волос – эффективный способ вернуть им здоровье. Суть процедуры заключается в нанесении специальных средств, которые проникают в поры, склеивают чешуйки и покрывают защитной пленкой. Волосы становятся живыми, блестящими и гладкими.
+block js_extra
+	script.
+		$(document).ready(function(){
+			$('html, body').animate({
+				scrollTop:$('.content').offset().top - 100
+			}, 500)
+		})
